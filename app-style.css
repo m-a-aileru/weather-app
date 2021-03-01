@@ -1,0 +1,33 @@
+* {
+    font-family: "Lucida Console", sans-serif;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#city, #icon, #temp, #desc {
+    width: 100%;
+    border: 1px solid black;
+    padding: 3rem;
+}
+
+#city {
+    
+}
+
+#icon {
+    
+}
+
+#temp {
+    
+}
+
+#desc {
+    
+}
