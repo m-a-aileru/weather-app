@@ -1,13 +1,17 @@
 let cityDisplay = document.getElementById("city"), cityInput = document.getElementById("city-input"), city = "";
+let menuArrow = document.getElementById("menu-arrow");
+let userInput = document.querySelector(".user-input");
+let getWeatherButton = document.getElementById("get-weather-button");
 let iconDisplay = document.getElementById("icon");
 let tempDisplay = document.getElementById("temp");
 let descDisplay = document.getElementById("desc");
 
+/*
 cityDisplay.textContent = "This is the city.";
 iconDisplay.textContent = "This is the image representing the weather.";
 tempDisplay.textContent = "This is the temperature.";
 descDisplay.textContent = "This is the description of the weather.";
-
+*/
 
 // API calls
 function getWeather() {
@@ -46,4 +50,19 @@ cityInput.addEventListener('keypress', function(e){
     cityDisplay.textContent = city;
 
   }
+});  
+
+menuArrow.addEventListener('click', function() {
+  if (userInput.style.display === 'none') {
+    userInput.style.display = 'block';
+  } else {
+    userInput.style.display = 'none';
+  }
+})
+
+getWeatherButton.addEventListener('click', function(){
+    city = cityInput.value;
+    getWeather();
+    console.log(`input confirmed: ${city}`);
+    cityDisplay.textContent = city;
 });  
