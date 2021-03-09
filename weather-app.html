@@ -8,12 +8,24 @@
     <title>Weather App</title>
 </head>
 <body>
+    <header><p>WEATHER APP</p></header>
     <div class="container">
-        <h2 id="city">Placeholder for city</h2>
-        <input type="text" id="city-input" name="city-input">
-        <div id="icon">Placeholder for weather image/icon</div>
-        <h2 id="temp">Placeholder for temperature</h2>
-        <p id="desc">Placeholder for weather description</p>
+    <!--    <header><p>WEATHER APP</p></header>-->    
+        <div id="city">--</div>
+        <div id="menu-arrow"><p>v</p></div>
+
+        <div class="user-input">
+            <input type="text" id="city-input" name="city-input">
+            <input type="button" id="get-weather-button" name="get-weather-button" value="Get weather">
+            <!--<button id="get-weather-button">Get location weather</button>-->
+        </div>
+        
+        <div class="temp-icon-cont">
+            <div id="temp"><span id="temp-num">--</span><span id="degree-celsius"></span></div>
+            <div id="icon"><img src="images/thermometer.png" alt="Weather icon" width="100px" /></div>
+        </div>
+        
+        <div id="desc">--</div>
     </div>
 
     <script src="wa-script.js"></script>
