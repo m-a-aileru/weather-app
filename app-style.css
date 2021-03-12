@@ -26,12 +26,12 @@ header p {
 
 #city, #icon, #temp, #desc {
    width: 100%;
-   border: 1px solid black;
+   /*border: 1px solid black;*/
     
 }
 
 #city {
-    font-size: 4vmax;  
+    font-size: 4.5vmax;  
     margin-top: 4rem;
 }
 
@@ -54,6 +54,8 @@ header p {
     flex-direction: column;
     */
     display: none;
+    flex-direction: column;
+    width: 100%;
 }
 
 #city-input {
@@ -126,16 +128,47 @@ header p {
         background: pink;
     }
 
-    .temp-icon-cont {     
+    #city {
+        font-size: 5vmax;  
+        margin-top: 6rem;
+    }
+
+    .user-input {
         flex-direction: row;
     }
 
-    #temp {
+    #city-input {
+        width: 65%;
+        height: 3rem;
+    
+        
+        
+    }
+    
+    #get-weather-button {
+        width: 35%;
+        
+        
+    }
 
+    .temp-icon-cont {     
+        /*
+        flex-direction: row;
+        justify-content: center;
+        */
+        display: flex;
+    }
+
+    #temp {
+        width: 50%;
     }
 
     #icon {
+        width: 40%;
+    }
 
+    #desc {
+        font-size: 3.5vmax;
     }
  }
  
@@ -144,6 +177,45 @@ header p {
     body {
         background: yellow;
     }
+
+    #city {
+        font-size: 6vmax;  
+        
+    }
+
+    .user-input {
+        margin: 2rem 0;
+    }
+
+    #city-input {
+        width: 55%;
+        height: 3rem;
+    
+        
+        
+    }
+    
+    #get-weather-button {
+        width: 45%;
+        
+        
+    }
+
+    .temp-icon-cont {     
+        
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    #temp {
+        width: 60%;
+    }
+
+    #icon {
+        width: 35%;
+    }
+    
  }
  
  /* Large devices (laptops/desktops, 992px and up) */
@@ -160,16 +232,19 @@ header p {
 
     #temp, #icon {
         /*    width: 48%;*/
-        padding: 1.85%;
-    }                   
         
+    }    
+    
     #temp {
-        width: 46%;
+        width: 60%;
     }
 
     #icon {
-        width: 46%;
+        width: 35%;
     }
+     
+
+    
         
  }
  
@@ -179,9 +254,69 @@ header p {
         background: orangered;
     }
 
+    header p {
+        font-size: 2vmax;
+    }
+    
+    .container {
+        width: 95%;
+        text-align: left;
+        flex-flow: row wrap;
+    }
+
+
+    .city-menu {
+        justify-content: center;
+        margin-bottom: 2em;
+
+    }
+
+    #city {
+        width: 50%;
+        margin-top: 6rem;
+    }
+
+    #menu-arrow {
+        width: 50%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .user-input {
+        width: 70%;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+    #city-input {
+        height: 3em;
+    }
+
+    #get-weather-button {
+        width: 20%;
+        height: 3em;
+    }
+
     .temp-icon-cont {
     
         
+        width: 100%;
         flex-direction: row;
+        /*justify-content: space-around;*/
     }
+
+    #temp {
+        width: 35%;
+    }
+
+    #icon {
+        width: 17%;
+    }
+
+    #desc { 
+        text-align: center;
+        font-size: 2.5vmax;
+    }
+
  } 
